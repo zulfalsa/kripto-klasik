@@ -1,0 +1,22 @@
+@import url('[https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap)');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { 
+  font-family: 'Pixelify Sans', sans-serif; 
+  letter-spacing: 0.5px;
+}
+
+/* Pixel Scrollbar */
+::-webkit-scrollbar { width: 12px; border-left: 4px solid #fdf2f8; }
+::-webkit-scrollbar-track { background: #fdf2f8; }
+::-webkit-scrollbar-thumb { background: #e879f9; border: 2px solid #fdf2f8; }
+::-webkit-scrollbar-thumb:hover { background: #d946ef; }
+
+body {
+  background-color: #f8f0ff;
+  background-image: radial-gradient(#e9d5ff 1px, transparent 1px);
+  background-size: 24px 24px;
+}
