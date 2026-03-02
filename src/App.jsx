@@ -19,7 +19,7 @@ const App = () => {
       </main>
 
       <footer className="text-center py-12 text-lg font-bold text-slate-500 uppercase tracking-widest">
-        &copy; {new Date().getFullYear()} Kriptografi Klasik • PIXEL ART EDITION
+        &copy; {new Date().getFullYear()} Kriptografi B • Zulfa Salsabila (21120123130057)
       </footer>
     </div>
   );

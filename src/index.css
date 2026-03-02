@@ -1,22 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* { 
-  font-family: 'Pixelify Sans', sans-serif; 
-  letter-spacing: 0.5px;
+@layer base {
+  html {
+    font-family: 'Pixelify Sans', sans-serif;
+    letter-spacing: 0.5px;
+  }
 }
 
-/* Pixel Scrollbar */
-::-webkit-scrollbar { width: 12px; border-left: 4px solid #fdf2f8; }
-::-webkit-scrollbar-track { background: #fdf2f8; }
-::-webkit-scrollbar-thumb { background: #e879f9; border: 2px solid #fdf2f8; }
-::-webkit-scrollbar-thumb:hover { background: #d946ef; }
+/* Pixel Scrollbar dengan Tema Baru */
+::-webkit-scrollbar { 
+  width: 12px; 
+  border-left: 4px solid #F0FFDF; 
+}
+::-webkit-scrollbar-track { 
+  background: #F0FFDF; 
+}
+::-webkit-scrollbar-thumb { 
+  background: #FFAAB8; 
+  border: 2px solid #F0FFDF; 
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: #FFD8DF; 
+}
 
+/* Global Background Gamified dengan Warna Baru */
 body {
-  background-color: #f8f0ff;
-  background-image: radial-gradient(#e9d5ff 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-color: #F0FFDF;
+  background-image: 
+    linear-gradient(#A8DF8E 2px, transparent 2px),
+    linear-gradient(90deg, #A8DF8E 2px, transparent 2px),
+    linear-gradient(#A8DF8E 1px, transparent 1px),
+    linear-gradient(90deg, #A8DF8E 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }

@@ -26,13 +26,13 @@ export const playfair = (text, key, decrypt = false) => {
       formatted += text[i];
       if (i + 1 < text.length) {
         if (text[i] === text[i + 1]) {
-          formatted += "X";
+          formatted += "Q";
           i--;
         } else {
           formatted += text[i + 1];
         }
       } else {
-        formatted += "X";
+        formatted += "Q";
       }
     }
     text = formatted;
